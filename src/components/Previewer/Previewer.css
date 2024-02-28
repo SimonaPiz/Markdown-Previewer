@@ -1,0 +1,24 @@
+#prevContainer {
+  width: 65%;
+  height: 95%;
+  background-color: var(--primaryDark);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 1px 8px 15px var(--primaryDark);
+  border-radius: 15px;
+}
+
+#previewer {
+  width: 95%;
+  height: 83%;
+  padding: 32px 16px;
+  background-color: #fff;  
+  color: black;
+  overflow: scroll;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  scrollbar-width: thin;
+  scrollbar-color: var(--primaryDark) rgba(133, 142, 250, .3);
+  resize: none;
+}
