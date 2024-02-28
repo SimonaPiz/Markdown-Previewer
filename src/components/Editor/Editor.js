@@ -5,7 +5,15 @@ export default function Editor () {
 
   return (
     <div id='editorContainer'>
-      <textarea id='editor'></textarea>
+      <div>
+        <h2>Editor</h2>
+      </div>
+      <textarea 
+        id='editor' 
+        typeof='text' 
+        defaultValue={'some code'}
+        required
+      ></textarea>
     </div>
   );
 }
