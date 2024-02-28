@@ -5,9 +5,11 @@ export default function Editor () {
 
   return (
     <div id='editorContainer'>
-      <div>
-        <h2>Editor</h2>
-      </div>
+      <h2>
+        <span className="material-symbols-outlined icon">code</span>
+        Editor
+      </h2>
+  
       <textarea 
         id='editor' 
         typeof='text' 

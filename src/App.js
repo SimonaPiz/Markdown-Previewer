@@ -6,8 +6,16 @@ import Previewer from './components/Previewer/Previewer';
 function App() {
   return (
     <div className="App">
-      <Editor />
-      <Previewer />
+      <h1>
+        Markdown Previewer 
+        <span className="material-symbols-outlined rotate">
+          autorenew
+        </span>
+      </h1>
+      <div className="converter">
+        <Editor />
+        <Previewer />
+      </div>
     </div>
   );
 }

@@ -5,10 +5,12 @@ export default function Previewer () {
 
   return (
     <div id='prevContainer'>
-      <div>
-        <h2>Previewer</h2>
-      </div>
-      <div id='previewer'></div>
+      <h2>
+        <span class="material-symbols-outlined icon">preview</span>
+        Previewer
+      </h2>
+
+      <div id='preview'></div>
     </div>
   );
 }
