@@ -14,6 +14,9 @@ function App() {
       </h1>
       <div className="converter">
         <Editor />
+        <span className="material-symbols-outlined" id='right-arrow'>
+          arrow_right_alt
+        </span>
         <Previewer />
       </div>
     </div>
