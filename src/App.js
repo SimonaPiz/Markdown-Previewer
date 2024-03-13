@@ -1,7 +1,6 @@
 //import logo from './logo.svg';
 import './App.css';
-import Editor from './components/Editor/Editor';
-import Previewer from './components/Previewer/Previewer';
+import MarkdownConverter from './features/MarkdownConverter/MarkdownConverter';
 
 function App() {
   return (
@@ -12,13 +11,7 @@ function App() {
           autorenew
         </span>
       </h1>
-      <div className="converter">
-        <Editor />
-        <span className="material-symbols-outlined" id='right-arrow'>
-          arrow_right_alt
-        </span>
-        <Previewer />
-      </div>
+      <MarkdownConverter />
     </div>
   );
 }
