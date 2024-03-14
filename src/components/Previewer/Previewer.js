@@ -1,7 +1,7 @@
 import React from 'react';
 import './Previewer.css';
 
-export default function Previewer () {
+export default function Previewer ({textConverted}) {
 
   return (
     <div id='prevContainer'>
@@ -10,7 +10,9 @@ export default function Previewer () {
         Previewer
       </h2>
 
-      <div id='preview'></div>
+      <div id='preview'>
+        {textConverted}
+      </div>
     </div>
   );
 }
