@@ -1,13 +1,16 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import './Editor.css';
-import defaultText from './defaultText';
 
-export default function Editor () {
-  const [textValue, setTextValue] = useState(defaultText);
+export default function Editor ({text, dispatch, setTextInput}) {
+  const [textValue, setTextValue] = useState(text);
 
   const handleChange = (e) => {
     setTextValue(e.target.value);
   }
+
+  useEffect(() => {
+    dispatch(setTextInput(textValue));
+  }, [dispatch, textValue]);
 
   return (
     <div id='editorContainer'>

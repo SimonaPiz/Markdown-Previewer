@@ -6,17 +6,14 @@ import defaultText from '../../components/Editor/defaultText';
 export const markdownConverterSlice = createSlice({
   name: 'markdownConverter',
   initialState: {
-    textInput: '',
+    textInput: defaultText,
   },
   reducers: {
-    loadDefaultTextInput : (state) => {
-      state.textInput = defaultText;
-    },
     setTextInput: (state, action) => {
       state.textInput = action.payload;
     }
   }
 });
 
-export const {setTextInput, loadDefaultTextInput} = markdownConverterSlice.actions;
+export const {setTextInput} = markdownConverterSlice.actions;
 export default markdownConverterSlice.reducer;
