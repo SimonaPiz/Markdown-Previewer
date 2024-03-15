@@ -1,7 +1,9 @@
 import React from 'react';
+import { Markup } from 'interweave';
 import './Previewer.css';
 
 export default function Previewer ({textConverted}) {
+  
 
   return (
     <div id='prevContainer'>
@@ -11,7 +13,7 @@ export default function Previewer ({textConverted}) {
       </h2>
 
       <div id='preview'>
-        {textConverted}
+        <Markup content={textConverted} />
       </div>
     </div>
   );
