@@ -62,4 +62,8 @@
   thead {
     background-color: var(--primaryLigth);
   }
+
+  img {
+    max-width: 98%;
+  }
 }

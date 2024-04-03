@@ -1,9 +1,8 @@
 import React from 'react';
-import { Markup } from 'interweave';
+import { Interweave } from 'interweave';
 import './Previewer.css';
 
 export default function Previewer ({textConverted}) {
-  
 
   return (
     <div id='prevContainer'>
@@ -11,10 +10,13 @@ export default function Previewer ({textConverted}) {
         <span className="material-symbols-outlined icon">preview</span>
         Previewer
       </h2>
-
-      <div id='preview'>
-        <Markup content={textConverted} />
-      </div>
+      
+      <Interweave 
+        tagName="div"
+        attributes={{'id':'preview'}}
+        content={textConverted} 
+      />
+      
     </div>
   );
 }
