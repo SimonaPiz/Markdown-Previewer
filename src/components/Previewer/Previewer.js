@@ -1,5 +1,5 @@
 import React from 'react';
-import { Interweave } from 'interweave';
+import { Markup } from 'interweave';
 import './Previewer.css';
 
 export default function Previewer ({textConverted}) {
@@ -11,11 +11,13 @@ export default function Previewer ({textConverted}) {
         Previewer
       </h2>
       
-      <Interweave 
-        tagName="div"
-        attributes={{'id':'preview'}}
+      <div id='preview'>
+      <Markup
         content={textConverted} 
+        emptyContent=''
+        noWrap='true'
       />
+      </div>
       
     </div>
   );

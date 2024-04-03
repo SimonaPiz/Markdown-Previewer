@@ -10,7 +10,7 @@ export default function Editor ({text, dispatch, setTextInput}) {
 
   useEffect(() => {
     dispatch(setTextInput(textValue));
-  }, [dispatch, textValue]);
+  }, [dispatch, textValue, setTextInput]);
 
   return (
     <div id='editorContainer'>
