@@ -14,10 +14,13 @@ export default function Editor ({text, dispatch, setTextInput}) {
 
   return (
     <div id='editorContainer'>
-      <h2>
-        <span className="material-symbols-outlined icon">code</span>
-        Editor
-      </h2>
+      <div className='head'>
+        <h2>
+          <span className="material-symbols-outlined icon">code</span>
+          Editor
+        </h2>
+        <span className="material-symbols-outlined icon-fullscreen icon">fullscreen</span>
+      </div>
   
       <textarea 
         id='editor' 

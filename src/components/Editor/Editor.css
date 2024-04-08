@@ -10,6 +10,23 @@
   border-radius: 5px;
 }
 
+.head {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+}
+
+.icon {
+  padding: 5px;
+  border-radius: 3px;
+}
+.icon-fullscreen:hover{
+  cursor: pointer;
+  background-color: var(--primaryLigth);
+  color: var(--primaryDark);
+}
+
 textarea#editor {
   width: 95%;
   height: 83%;

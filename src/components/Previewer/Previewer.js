@@ -6,10 +6,13 @@ export default function Previewer ({textConverted}) {
 
   return (
     <div id='prevContainer'>
-      <h2>
-        <span className="material-symbols-outlined icon">preview</span>
-        Previewer
-      </h2>
+      <div className='head'>
+        <h2>
+          <span className="material-symbols-outlined icon">preview</span>
+          Previewer
+        </h2>
+        <span className="material-symbols-outlined icon-fullscreen icon">fullscreen</span>
+      </div>
       
       <div id='preview'>
       <Markup
