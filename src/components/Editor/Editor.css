@@ -10,6 +10,24 @@
   border-radius: 5px;
 }
 
+.head {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+}
+
+.icon {
+  padding: 5px;
+  border-radius: 3px;
+}
+.icon-fullscreen:hover{
+  cursor: pointer;
+  background-color: var(--primaryLigth);
+  color: var(--primaryDark);
+  border-bottom: solid 2px rgba(0, 0, 0, .4);
+}
+
 textarea#editor {
   width: 95%;
   height: 83%;
@@ -24,4 +42,12 @@ textarea#editor {
   scrollbar-width: thin;
   scrollbar-color: var(--primaryLigth) rgba(133, 142, 250, .3);
   resize: none;
+}
+
+@media only screen and (max-width: 700px) {
+  #editorContainer {
+    width: 90%;
+    height: 50%;
+  }
+  
 }
