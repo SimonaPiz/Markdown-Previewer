@@ -40,6 +40,9 @@ export default function MarkdownConverter() {
       <span className="material-symbols-outlined" id='right-arrow'>
         arrow_right_alt
       </span>
+      <span className="material-symbols-outlined" id='down-arrow'>
+        south
+      </span>
       <Previewer 
         textConverted={textConverted} 
         isFullscreen={isFullscreenPr} 
