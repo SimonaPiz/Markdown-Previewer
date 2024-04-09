@@ -41,7 +41,6 @@ export default function Editor ({text, setTextInput, isFullscreen, toggleFullscr
         typeof='text' 
         value={textValue}
         onChange={(e) => handleChange(e)}
-        required
       ></textarea>
     </div>
   );

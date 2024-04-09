@@ -25,7 +25,6 @@ export const markdownConverterSlice = createSlice({
       state.textInput = action.payload;
     },
     toggleFullscreen: (state, action) => {
-      console.log(action.payload);
       if (action.payload === 'editor') {
         state.editorFullscreen = !state.editorFullscreen;
       } else {

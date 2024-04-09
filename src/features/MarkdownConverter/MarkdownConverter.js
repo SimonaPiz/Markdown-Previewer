@@ -13,7 +13,7 @@ export default function MarkdownConverter() {
   const isFullscreenEd = useSelector((state) => state.markdownConverter.editorFullscreen);
   const isFullscreenPr = useSelector((state) => state.markdownConverter.prevFullscreen);
 
-  console.log(isFullscreenEd, isFullscreenPr)
+  //console.log(isFullscreenEd, isFullscreenPr)
 
   useEffect(() => {
     dispatch(convertText(textInput));
