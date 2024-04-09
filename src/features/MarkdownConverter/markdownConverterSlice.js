@@ -17,10 +17,20 @@ export const markdownConverterSlice = createSlice({
   initialState: {
     textInput: defaultText,
     textConverted: '',
+    editorFullscreen: true,
+    prevFullscreen: true,
   },
   reducers: {
     setTextInput: (state, action) => {
       state.textInput = action.payload;
+    },
+    toggleFullscreen: (state, action) => {
+      console.log(action.payload);
+      if (action.payload === 'editor') {
+        state.editorFullscreen = !state.editorFullscreen;
+      } else {
+        state.prevFullscreen = !state.prevFullscreen;
+      }
     }
   },
   extraReducers: (builder) => {
@@ -30,5 +40,5 @@ export const markdownConverterSlice = createSlice({
   }
 });
 
-export const {setTextInput} = markdownConverterSlice.actions;
+export const {setTextInput, toggleFullscreen} = markdownConverterSlice.actions;
 export default markdownConverterSlice.reducer;
